@@ -37,7 +37,7 @@
                 <img class="strzalki" onclick="ZmianaZdjecia(2)" src="images/prawo_strzalka.png">
               </div>
               <img id="kraj_zdj" src="images/countries/Kraj_1.png">
-              <a href="turcja.html"><button id="podrow_butt">Wyrusz</button></a>
+              <a id="link" href="turcja.html"><button id="podrow_butt">Wyrusz</button></a>
         </div>
 
     </section>

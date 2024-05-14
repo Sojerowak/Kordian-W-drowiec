@@ -88,6 +88,20 @@ function ZmianaNazwy()
         case 9: nazwaKraju.innerText = "Prusy"; break;
         case 10: nazwaKraju.innerText = "Księstwo Pszczyńskie"; break;
     }
+
+    switch(galeriaNumer)
+    {
+        case 1: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 2: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 3: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 4: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 5: document.getElementById("link").href = "mountblanc.html"; break;
+        case 6: document.getElementById("link").href = "turcja.html"; break;
+        case 7: document.getElementById("link").href = "hiszpania.html"; break;
+        case 8: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 9: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+        case 10: document.getElementById("link").href = "http://localhost/Kordian.%20W%C4%99drowiec/deportacja.php"; break;
+    }
 }
 
 // Poruszanie 
@@ -161,6 +175,38 @@ function kup(a){
                         document.getElementById("iloscKebaba").innerText = "🥙 = " + kebaby;
                     }
             }
+            case 2:
+            {
+                if(kebaby > 20)
+                    {
+                        naClick += 2;
+                        document.getElementById("iloscKebaba").innerText = "🥙 = " + kebaby;
+                    }
+            }
+            case 3:
+            {
+                if(kebaby > 50)
+                    {
+                        naClick += 5;
+                        document.getElementById("iloscKebaba").innerText = "🥙 = " + kebaby;
+                    }
+            }
+            case 4:
+                {
+                    if(kebaby > 100)
+                        {
+                            naClick += 5;
+                            document.getElementById("iloscKebaba").innerText = "🥙 = " + kebaby;
+                        }
+                }
+             case 5:
+             {
+                 if(kebaby > 1000)
+                     {
+                         sigmaLvl+=3;
+                         window.location.href = "http://localhost/Kordian.%20W%c4%99drowiec/";
+                     }
+             }
     }
 }
 
@@ -177,7 +223,7 @@ function czas(){
   else if (thewegoCzas < 0 )
   {
      sigmaLvl--;
-     window.location.href = "index.php";
+     window.location.href = "http://localhost/Kordian.%20W%c4%99drowiec/";
   }
 }
 
@@ -247,6 +293,20 @@ function Sprawdz(a){
     }
 }
 
+function Monolog()
+{
+    
+    if(sigmaLvl < 0) { // Bad Ending
+        document.getElementById("kordian").innerText = "Może lepiej się rzucić w lodowe szczeliny?… Tak... ";
+    }
+    else if(sigmaLvl > 0 && sigmaLvl < 7){ // emm good ending?
+        document.getElementById("kordian").innerText = "W sumie faktycznie te me życie nie jest takie fajne, pójde na siłke czy coś...";
+    }
+    else{ // epic ending
+        document.getElementById("kordian").innerText = "Winkelried ǳidy wrogów zebrał i w pierś włożył,  Ludy! Winkelried ożył!";
+    }
+    
+}
 
 function Update()
 {
@@ -270,3 +330,4 @@ function Update()
         DecyzjaTurcja();
     });
 }
+
