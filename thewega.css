@@ -1,0 +1,72 @@
+body{
+    background-image: url(images/background/thewega.jpg);
+    background-size: 100%;
+    background-attachment: fixed ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: none;
+}
+
+.clicker{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.clicker > button
+{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    margin: 5px;
+    transition-duration: 1s;
+}
+
+.clicker > button:hover
+{
+
+    background-color: rgb(253, 192, 118);
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#intro{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.797);
+    border: 2px outset black;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 45vh;
+    width: 100%;
+    bottom: 0%;
+}
+#intro > div > a > button{
+
+    height: 40px;
+    opacity: 60%;
+    color: yellow;
+    font-size: 19px;
+    background-color: rgb(72, 54, 19);
+    border: 3px black solid;
+    transition-duration: 1s;
+}
+
+#intro > div > a > button:hover{
+    
+    height: 50px;
+    opacity: 80%;
+    background-color: rgb(102, 76, 27);
+    border: 3px black solid;
+    cursor: pointer;
+    transition-duration: 1s;
+}

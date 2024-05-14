@@ -1,0 +1,90 @@
+body{
+    background-image: url(images/background/Turcja.jpg);
+    background-size: 100%;
+    background-attachment: fixed ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#kordian{
+    position: absolute;
+    top: 65vh;
+    left: 0px;
+}
+
+#lada{
+    position: absolute;
+    top: 60vh;
+    left: 40%;
+}
+
+#klienci {
+    position: relative;
+    left: 10%;
+    top: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#klienci > div > img{ 
+
+    width: auto;
+    height: 200px;
+}
+
+#klienci > div { 
+
+   animation: misianymisiany  20s linear ;
+}
+
+#decyzja {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.797);
+    border: 2px outset black;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 45vh;
+    width: 100%;
+    bottom: 0%;
+}
+
+#decyzja > div > a > button{
+
+    height: 40px;
+    opacity: 60%;
+    color: yellow;
+    font-size: 19px;
+    background-color: rgb(72, 54, 19);
+    border: 3px black solid;
+    transition-duration: 1s;
+}
+
+#decyzja > div > a > button:hover{
+    
+    height: 50px;
+    opacity: 80%;
+    background-color: rgb(102, 76, 27);
+    border: 3px black solid;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+@keyframes misianymisiany {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    55% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(1200px);
+    }
+}

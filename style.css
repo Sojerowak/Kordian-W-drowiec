@@ -1,0 +1,115 @@
+body{
+    background-image: url(images/europa_1828.png);
+    background-size: 100%;
+    background-attachment: fixed ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav > button{
+    height: 40px;
+    opacity: 60%;
+    color: yellow;
+    font-size: 19px;
+    background-color: rgb(72, 54, 19);
+    border: 3px black solid;
+    transition-duration: 1s;
+}
+
+nav > button:hover{
+    height: 50px;
+    opacity: 80%;
+    background-color: rgb(102, 76, 27);
+    border: 3px black solid;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#wybor{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.71);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.podroz {
+    background-color: rgba(97, 71, 46, 0.71);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    border: solid 3px black;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#strzalki-div{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 50vh;
+}
+
+.strzalki{
+    position: relative;
+    background-color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+ 
+.strzalki:hover{
+   cursor: pointer;
+   background-color: rgb(208, 208, 208);
+   transition: 0.5s;
+
+}
+
+.wyjscie{
+    position: relative;
+    background-color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+ 
+.wyjscie:hover{
+   cursor: pointer;
+   background-color: rgb(208, 208, 208);
+   transition: 0.5s;
+
+}
+
+#podrow_butt{
+    height: 40px;
+    width: 100px;
+    color: yellow;
+    font-size: 19px;
+    background-color: rgb(100, 72, 15);
+    border: 3px black solid;
+    transition-duration: 1s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ 
+}
+
+#podrow_butt:hover{
+    cursor: pointer;
+    background-color: rgb(149, 107, 23);
+}
+
+#kraj_zdj{
+    width: "auto";
+    max-height: 350px
+    
+}
