@@ -1,0 +1,23 @@
+body {
+    background-image: url(images/background/mountblanc.jpg);
+    background-size: 100%;
+    background-attachment: fixed ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#monolog{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.797);
+    border: 2px outset black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 45vh;
+    width: 100%;
+    bottom: 0%;
+}
